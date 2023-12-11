@@ -63,7 +63,8 @@
 	 
    function postData()
    { jsonObj.valueQuantity.value = parseFloat(document.getElementById("resRate").value);
-     jsonObj.effectiveDateTime = getFormattedTime();
+     //jsonObj.effectiveDateTime = getFormattedTime();
+     jsonObj.effectiveDateTime=document.getElementById("onsetDateTime").value;
      var jsonStr = JSON.stringify(jsonObj);
     //alert(jsonStr);
     var apiURL;
